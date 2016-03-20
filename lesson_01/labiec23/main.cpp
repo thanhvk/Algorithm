@@ -11,21 +11,17 @@ using namespace std;
 int main()
 {
     int n, sum;
-    string s;
 
     sum = 0;
 
     scanf("%d", &n);
 
     if (n > 0 && n < 10000) {
-        std::string s = std::to_string(n);
-
-        for (int i = 0; i < s.length(); i++) {
-            printf("%d", std::stoi(s[i]));
-            // = sum + std::stoi(s[i]);
+        while(n%10 > 0) {
+            sum = sum + n%10;
         }
 
-        printf("%d", sum);
+        printf("%d\n", sum);
     }
 
     getchar();
