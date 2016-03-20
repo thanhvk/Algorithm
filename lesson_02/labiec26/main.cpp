@@ -8,26 +8,21 @@
 
 using namespace std;
 
-bool checkArithPro(int itest) {
-    int a, b, c;
+bool checkSeq(int itest) {
+    int a, b;
     bool result;
     result = true;
 
     for (int j = 0; j < itest; j++) {
         if (j == 0) {
+            scanf("%d", &a);
+        }
+        if (j >= 1) {
             scanf("%d", &b);
-        }
-        if (j == 1) {
-            scanf("%d", &c);
-            a = c-b;
-            b = c;
-        }
-        if (j > 1) {
-            scanf("%d", &c);
-            if (a != (c - b)) {
+            if ((a * b) >= 0) {
                 result = false;
             } else {
-                b = c;
+                a = b;
             }
         }
     }
@@ -38,7 +33,7 @@ bool checkArithPro(int itest) {
 int main()
 {
     int inp, itest, ntest;
-    freopen("labiec25.inp", "r", stdin);
+    freopen("labiec26.inp", "r", stdin);
 
     scanf("%d", &ntest);
 
@@ -46,10 +41,10 @@ int main()
         scanf("%d", &itest);
 
         if (itest > 0 && itest < 100) {
-            if(checkArithPro(itest)) {
+            if(checkSeq(itest)) {
                 printf("1\n");
             } else {
-                printf("Khong phai cap so cong\n");
+                printf("0\n");
             }
         } else {
             printf("Kiem tra lai du lieu dau vao\n");
