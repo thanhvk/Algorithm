@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1458583811 source:/home/thanhvk/Desktop/Algorithm/Algorithm/lesson_02/labiec32/main.cpp
+	<iostream>
+	<fstream>
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	<ncurses.h>
+	<string>
+
