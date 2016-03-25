@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1458676061 source:/home/thanhvk/Desktop/Algorithm/lesson_03/mini_lesson_03/capba1/main.cpp
+1458842457 source:/home/thanhvk/Desktop/Algorithm/lesson_03/mini_lesson_03/tieuhoc11/main.cpp
 	<iostream>
 	<fstream>
 	<string.h>
@@ -7,4 +7,5 @@
 	<stdlib.h>
 	<ncurses.h>
 	<string>
+	<math.h>
 
