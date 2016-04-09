@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1459176973 source:/home/thanhvk/Desktop/Algorithm/lesson_04/explore2/main.cpp
+	<iostream>
+	<fstream>
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	<vector>
+	<math.h>
+

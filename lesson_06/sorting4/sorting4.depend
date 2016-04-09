@@ -1,0 +1,19 @@
+# depslib dependency file v1.0
+1459604122 source:/home/thanhvk/Desktop/Algorithm/lesson_05/sorting4/main.cpp
+	<iostream>
+	<fstream>
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	<algorithm>
+	<math.h>
+
+1459823488 source:/home/thanhvk/Desktop/Algorithm/lesson_06/sorting4/main.cpp
+	<iostream>
+	<fstream>
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	<algorithm>
+	<math.h>
+

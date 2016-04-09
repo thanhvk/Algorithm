@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1459791758 source:/home/thanhvk/Desktop/Algorithm/lesson_06/sorting5/main.cpp
+	<iostream>
+	<fstream>
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	<map>
+	<vector>
+	<algorithm>
+	<math.h>
+

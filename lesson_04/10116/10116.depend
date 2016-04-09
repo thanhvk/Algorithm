@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1459188245 source:/home/thanhvk/Desktop/Algorithm/lesson_04/10116/main.cpp
+	<iostream>
+	<fstream>
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	<vector>
+	<math.h>
+

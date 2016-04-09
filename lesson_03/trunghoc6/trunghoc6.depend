@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1458653525 source:/home/thanhvk/Desktop/Algorithm/lesson_03/trunghoc6/main.cpp
+1458846984 source:/home/thanhvk/Desktop/Algorithm/lesson_03/mini_lesson_03/trunghoc6/main.cpp
 	<iostream>
 	<fstream>
 	<string.h>
@@ -7,4 +7,5 @@
 	<stdlib.h>
 	<ncurses.h>
 	<string>
+	<math.h>
 

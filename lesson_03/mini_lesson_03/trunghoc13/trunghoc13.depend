@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1458974223 source:/home/thanhvk/Desktop/Algorithm/lesson_03/mini_lesson_03/trunghoc13/main.cpp
+	<iostream>
+	<fstream>
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	<ncurses.h>
+	<string>
+

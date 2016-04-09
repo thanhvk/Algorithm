@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1459593925 source:/home/thanhvk/Desktop/Algorithm/lesson_05/maze/main.cpp
+	<iostream>
+	<fstream>
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+

@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1459858887 source:/home/thanhvk/Desktop/Algorithm/lesson_06/searching1/main.cpp
+	<iostream>
+	<fstream>
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+

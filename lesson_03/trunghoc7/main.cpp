@@ -5,50 +5,51 @@
 #include <stdlib.h>
 #include <ncurses.h>
 #include <string>
+#include <math.h>
 
 using namespace std;
 
-int s[111][111];
-int n;
-int nhang, ncot, k, count;
+int val[111][111];
+int nhang, ncot, sz, countS;
 
-int input() {
-    scanf("%d %d %d", &nhang, &ncot, &k);
+void input() {
+    scanf("%d", &nhang);
+    scanf("%d", &ncot);
+    scanf("%d", &sz);
 
     for (int i = 0; i < nhang; i++)
         for (int j = 0; j < ncot; j++)
-            scanf("%d", &s[i][j]);
+            scanf("%d", &val[i][j]);
 }
 
-bool isSquare(int hang, int cot, int size) {
-    for (int i = hang; i < hang+size;i++)
-        for (int j = hang; j < hang+size;j++)
-            if (s[i][j] == 0)
-                return false;
+bool checkSquare(int hang, int cot) {
+    for (int i = hang; i < sz + hang; i++)
+        for (int j = cot; j < sz + cot ; j++)
+            if (val[i][j] != 1) return false;
 
     return true;
 }
 
-int solve() {
-    for (int i = 0; i < nhang-k; i++) {
-        for (int j = 0; j < ncot-k; j++) {
-            if (isSquare(i, j, k))
-                count++;
+void solve() {
+    countS = 0;
+    for (int i = 0; i < nhang; i++) {
+        for (int j = 0; j < ncot ; j++) {
+            if ((i + sz) <= nhang && (j + sz) <= ncot && checkSquare(i, j)) {
+                countS++;
+            }
         }
     }
-
-    return count;
 }
 
-int output() {
-    printf("%d", solve());
+void output() {
+    printf("%d\n", countS);
 }
 
 int main()
 {
-    int ntest, itest, n, k;
+    int ntest;
 
-    freopen("trunghoc6.inp", "r", stdin);
+    freopen("trunghoc7.inp", "r", stdin);
 
     scanf("%d", &ntest);
 

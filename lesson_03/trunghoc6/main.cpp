@@ -5,45 +5,49 @@
 #include <stdlib.h>
 #include <ncurses.h>
 #include <string>
+#include <math.h>
 
 using namespace std;
 
-int s[111][111];
-int n;
-int sum1, sum2, min1, min2;
+int n, val[111][111];
 
-int input() {
+void input() {
     scanf("%d", &n);
 
     for (int i = 0; i < n; i++)
         for (int j = 0; j < n; j++)
-            scanf("%d", &s[i][j]);
+            scanf("%d", &val[i][j]);
 }
 
-int solve() {
+bool solve() {
     for (int i = 0; i < n; i++) {
-        for (int j = 0; j < n; j++) {
-            if (i == j && s[i][j] != 0) {
-                return 0;
+        for (int j = 0; j < n ; j++) {
+            if (i == j && val[i][j] != 0) {
+                return false;
             }
-            if (i > j && s[i][j] >= 0) {
-                return 0;
+            if (i > j && val[i][j] >= 0) {
+                return false;
             }
-            if (i < j && s[i][j] <= 0) {
-                return 0;
+            if (i < j && val[i][j] <= 0) {
+                return false;
             }
         }
     }
-    return 1;
+
+    return true;
 }
 
-int output() {
-    printf(solve());
+void output() {
+    if (solve()) {
+        printf("%d\n", 1);
+    } else {
+        printf("%d\n", 0);
+    }
 }
 
 int main()
 {
-    int ntest, itest, n, k;
+    int ntest;
 
     freopen("trunghoc6.inp", "r", stdin);
 
