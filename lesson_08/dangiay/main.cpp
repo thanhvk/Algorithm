@@ -30,12 +30,12 @@ void input(){
 
 	for (int i=0;i<nhang;i++) {
         scanf("%s", &ch[i]);
-            for (int j=0;j<ncot;j++) {
-                if (ch[i] == '0')
-                    s[i][j] = 0;
-                else
-                    s[i][j] = 1;
-            }
+        for (int j=0;j<ncot;j++) {
+            if (ch[i][j] == '0')
+                s[i][j] = 0;
+            else
+                s[i][j] = 1;
+        }
 	}
 }
 
@@ -70,7 +70,7 @@ int loang(int hang,int cot){
 		dau++;
 		cur = q[dau];
 
-		for (int i=0;i<4;i=i+2){
+		for (int i=0;i<2;i++){
 			next = doMove(cur,i);
 
 			if ( isOut(next) )
@@ -102,8 +102,6 @@ void solve(){
 			}
 		}
 	}
-
-	sort(vect.begin(),vect.end());
 }
 
 void output(){
