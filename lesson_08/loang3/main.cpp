@@ -54,10 +54,10 @@ void loang(int lang) {
         cur = q[dau];
 
         for (int next = 1; next <= nlang; next++) {
-            if (next != cur && d[next] != d[cur] && flag[cur][next] == 1) {
+            if (d[next] == 0 && flag[cur][next] == 1) {
                 cuoi++;
                 q[cuoi] = next;
-                d[next] = d[cur];
+                d[next] = 1;
                 lev[cuoi] = lev[dau] + 1;
             }
         }

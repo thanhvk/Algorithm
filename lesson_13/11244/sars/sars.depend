@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1462624933 source:/home/thanhvk/Desktop/Algorithm/lesson_13/11244/sars/main.cpp
+	<iostream>
+	<fstream>
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	<vector>
+	<algorithm>
+
