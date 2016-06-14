@@ -10,12 +10,10 @@
 #define pb push_back
 
 using namespace std;
+int n;
 
 void input() {
-    int n;
     scanf("%d", &n);
-        for (int i = 0; i < n; i++)
-            scanf("%d", &n);
 }
 
 void solve() {
