@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1465913633 source:/home/thanhvk/Desktop/choinon02/main.cpp
+	<iostream>
+	<fstream>
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	<map>
+	<vector>
+	<algorithm>
+	<math.h>
+
