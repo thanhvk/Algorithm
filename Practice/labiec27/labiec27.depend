@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1467357236 source:/home/thanhvk/Desktop/Algorithm/Practice/labiec27/main.cpp
+	<iostream>
+	<fstream>
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	<map>
+	<vector>
+	<algorithm>
+	<math.h>
+
