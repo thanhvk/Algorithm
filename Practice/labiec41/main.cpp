@@ -22,42 +22,23 @@ void printfChar(int num, char c) {
 }
 
 void solve() {
-    // First half
-    int a = 1;
-    int b = h - 2;
-    int c = 1;
-    int d = h/3 + 1;
-    // Second half
-    int e = h/2;
-    int f = 1;
-    int g = h -2;
-    int t = 1;
-
-    for (int i = 0; i < h/2; i++) {
-        printfChar(a, '*');
-        printfChar(b, ' ');
-        printfChar(c, '*');
-        printfChar(d, ' ');
+    for (int i = 1; i <= h/2; i++) {
+        printfChar(i, '*');
+        printfChar(h - 2*i, ' ');
+        printfChar(2*i - 1, '*');
+        printfChar((h - 2*i + 1)/2, ' ');
         printf("\n");
-        a++;
-        b -= 2;
-        c += 2;
-        d--;
     }
 
-    printfChar(a + c - 1, '*');
+    printfChar(3*h/2, '*');
     printf("\n");
 
-    for (int i = 0; i < h/2; i++) {
-        printfChar(e, '*');
-        printfChar(f, ' ');
-        printfChar(g, '*');
-        printfChar(t, ' ');
+    for (int i = 1; i <= h/2; i++) {
+        printfChar((h - 2*i + 1)/2, '*');
+        printfChar(2*i - 1, ' ');
+        printfChar(h - 2*i, '*');
+        printfChar(i, ' ');
         printf("\n");
-        e--;
-        f += 2;
-        g -= 2;
-        t++;
     }
 }
 
