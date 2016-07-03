@@ -30,7 +30,7 @@ void solve() {
         printf("\n");
     }
 
-    printfChar(3*h/2, '*');
+    printfChar((3*h - 1)/2, '*');
     printf("\n");
 
     for (int i = 1; i <= h/2; i++) {
