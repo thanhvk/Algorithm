@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1468166149 source:/home/thanhvk/Desktop/Algorithm/Practice/tieuhoc11/main.cpp
+	<iostream>
+	<fstream>
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	<map>
+	<vector>
+	<algorithm>
+	<math.h>
+
