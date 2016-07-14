@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1468430671 source:/home/thanhvk/Desktop/Algorithm/Practice/trunghoc12/main.cpp
+	<iostream>
+	<fstream>
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	<map>
+	<vector>
+	<algorithm>
+	<math.h>
+
